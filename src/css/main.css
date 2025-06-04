@@ -1,0 +1,177 @@
+/* Reinicio de estilos generales */
+*,body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+     scroll-behavior: smooth;
+}
+h1{
+    font-size: calc(1rem + 1vw);
+}
+h2{
+    color: #5F485F;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+}
+
+/* Estilos generales */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242424;
+}
+
+
+/* Estilos de enlaces y párrafos */
+a{
+    all: unset;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+p{
+    width: fit-content;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Estilos del separador */
+.separador{
+    width: 50%;
+    height: 2px;
+    background-color: #332633;
+    border-radius: 2px;
+}
+
+/* Estilos de la barra de navegación */
+.navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: clamp(350px, 50%, 800px);
+    background-color: #33263398;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    z-index: 1000;
+
+}
+
+/* Estilos de la sección de logo */
+.cont__logo{
+    width: fit-content;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+    padding: 25px;
+    
+    background-color: #263326;
+    color: #332633;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.logo--modRadius{
+    border-radius: 10px 0 0 10px;
+}
+/* Estilos de la seccion izquierda del navbar */
+.navbar__sec1{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    border-radius: 10px;
+}
+
+/* Estilos para la sección derecha del navbar */
+.navbar__sec2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    color: #f3e8ff;
+    
+}
+
+/* Estilos de los enlaces de la sección derecha */
+.navbar__sec2 a{
+    position: relative;
+    font-size: calc(0.6rem + 0.5vw);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+/* Efecto hover para los enlaces de la sección derecha */
+
+.navbar__sec2 a:hover{
+    animation: texto_btn 0.8s ease-in-out;
+}
+
+/* Elemento before para el efecto de fondo en los enlaces */
+
+.navbar__sec2 a::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    filter: blur(5px);
+    height: 100%;
+    background-color: #233924;
+    top: 0;
+    left: -100px;
+    opacity: 1;
+    z-index: -1;
+}
+
+/* Efecto hover para el elemento before */
+
+.navbar__sec2 a:hover::before{
+    opacity: 1;
+    animation: btn 0.8s ease-in-out;
+}
+
+/* Estilos botón cv */
+.sec2__btnCV{
+    background-color: #232C39;
+    color: #f3e8ff;
+    font-weight: bold; 
+    transition: all 0.3s ease;
+}
+.sec2__btnCV:hover{
+    background-color: #332633;
+    color: #f3e8ff;
+}
+/* Animaciónes del botón de la sección derecha */
+
+@keyframes btn {
+    0%{
+        left: -100px;
+        opacity: .2;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        left: 150%;
+        opacity: 0;
+    }
+}
+@keyframes texto_btn {
+    0%{
+        color: #f3e8ff;
+    }
+    50%{
+        color: #ffffff;
+    }
+    100%{
+        color: #f3e8ff;
+    }
+    
+}

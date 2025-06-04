@@ -1,0 +1,28 @@
+.footer{
+    width: 100%;
+    min-width: 300px;
+    background-color: #332633;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #515050;
+    font-size: calc(0.8rem + 0.2vw);
+    text-align: left;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.footer__section{
+    width: clamp(300px, 30%, 800px);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 20px;
+}
+
+.footer__section--row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
