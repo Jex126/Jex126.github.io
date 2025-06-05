@@ -11,3 +11,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
+.btnFlotante__whatsapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
