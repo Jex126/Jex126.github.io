@@ -1,0 +1,6 @@
+.cont__btnFlotante{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
