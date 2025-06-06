@@ -3,10 +3,13 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
+    color: #F3E8FF;
+    font-size: calc(0.5rem + 0.5vw);
 }
 .cont__btnFlotante img{
-    width: 50px;
-    height: 50px;
+    width: calc(2dvw + 2rem);
+    height: calc(2dvw + 2rem);
+    margin: 5px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
