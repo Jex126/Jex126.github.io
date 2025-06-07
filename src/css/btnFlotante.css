@@ -13,10 +13,24 @@
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    animation: palpitar 1.5s infinite;
 }
 .btnFlotante__whatsapp{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes palpitar{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+    
 }
