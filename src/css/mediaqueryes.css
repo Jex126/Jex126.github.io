@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  /* Aquí van los estilos solo para móviles */
+  .cursos__images{
+    animation: palpitar 4s ease-in-out infinite;
+  }
+  .sobremi__descripcion p{
+    text-align: center;
+  }
+}
